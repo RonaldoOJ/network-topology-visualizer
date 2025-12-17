@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Star Extended Network Topology</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" href="./assets/icons/icon.png">
+  <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+
+<body>
+
+<header class="header">
+  <h1>Enterprise Network Topology</h1>
+  <span class="subtitle">OSI Interactive Simulator</span>
+</header>
+
+<main class="layout">
+
+  <section class="canvas">
+    <svg id="topology" viewBox="0 0 1200 700" preserveAspectRatio="xMidYMid meet"></svg>
+
+    <div class="controls">
+      <button id="play">▶ Play</button>
+      <button id="pause">⏸ Pause</button>
+      <button id="reset">⟲ Reset</button>
+    </div>
+  </section>
+
+  <aside class="panel" id="panel">
+    <h2>Inspector</h2>
+    <p>Select a node or start simulation.</p>
+  </aside>
+
+</main>
+
+<script src="./assets/js/data.js"></script>
+<script src="./assets/js/renderer.js"></script>
+<script src="./assets/js/vlan.js"></script>
+<script src="./assets/js/traffic.js"></script>
+<script src="./assets/js/osi.js"></script>
+<script src="./assets/js/panel.js"></script>
+<script src="./assets/js/app.js"></script>
+
+</body>
+</html>
