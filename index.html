@@ -4,30 +4,36 @@
   <meta charset="UTF-8" />
   <title>Star Extended Network Topology</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- ICON -->
   <link rel="icon" type="image/png" href="./assets/icons/icon.png">
+
+  <!-- STYLES -->
   <link rel="stylesheet" href="./assets/css/style.css">
 </head>
 
 <body>
 
 <header class="header">
-  <h1>STAR EXTENDED NETWORK TOPOLOGY</h1>
-  <span class="subtitle">OSI Interactive Simulator</span>
+  <div class="header-inner">
+    <h1>Star Extended Network Topology</h1>
+    <span class="subtitle">OSI Interactive Simulator</span>
+  </div>
 </header>
 
 <main class="layout">
 
-  <section class="canvas">
+  <section class="canvas glass">
     <svg id="topology" viewBox="0 0 1200 700" preserveAspectRatio="xMidYMid meet"></svg>
 
-    <div class="controls">
+    <div class="controls glass">
       <button id="play">▶ Play</button>
       <button id="pause">⏸ Pause</button>
       <button id="reset">⟲ Reset</button>
     </div>
   </section>
 
-  <aside class="panel" id="panel">
+  <aside class="panel glass" id="panel">
     <h2>Inspector</h2>
     <p>Select a node or start simulation.</p>
   </aside>
@@ -43,4 +49,11 @@
 <script src="./assets/js/app.js"></script>
 
 </body>
+
+<!-- Background Video -->
+<video class="bg-video" autoplay muted loop playsinline>
+  <source src="./assets/icons/backgroundvideo2.mp4" type="video/mp4">
+</video>
+
+
 </html>
